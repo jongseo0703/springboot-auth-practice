@@ -10,25 +10,39 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>login</title>
+    <link rel="stylesheet" th:href="@{/css/login_style.css}"/>
 </head>
 <body>
 <form th:action="@{/login}" method="post">
-    <div>
-        <label for="loginId">
-
-        </label>
-        <input type="text" name="loginId" id="loginId" required />
+    <div class="header">
+        <div class="menu">
+            <h2>Cart</h2>
+            <h2>Login</h2>
+            <h2>join</h2>
+        </div>
     </div>
-    <div>
-        <label for="password">
-
-        </label>
-        <input type="password" name="password" id="password" required />
+    <div class="wrapper">
+        <div class="login-form">
+            <h2 class="title">ARVÉE</h2>
+            <div>
+                <label for="loginId"></label>
+                <input class="loginId" type="text" name="loginId" id="loginId" placeholder="아이디" required />
+            </div>
+            <div>
+                <label for="password"></label>
+                <input class="password" type="password" name="password" id="password" placeholder="비밀번호" required />
+            </div>
+            <div>
+                <button class="login-btn" type="submit">로그인</button>
+            </div>
+        </div>
     </div>
-    <div>
-        <button type="submit">
-            로그인하기
-        </button>
+    <div class="footer">
+        <div class="description">
+            <p>
+                린마케팅 | BUSINESS NUMBER: 128-37-45882 | 대표: 권지윤  | PERMIT NUMBER: 제 2022-고양일산동-1958호
+            </p>
+        </div>
     </div>
 </form>
 </body>
